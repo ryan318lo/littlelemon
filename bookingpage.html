@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="file:///Users/ryan/Desktop/website/Screenshot%202022-07-21%20at%206.51.22%20PM.png">
+  <link rel="stylesheet" href="bookingpage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<title>
+		Booking Form
+	</title>
+
+	<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: #00b1ec;
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+			max-width: 660px;
+			margin: 160px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+			top: 100%;
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #03ff85;
+			border: 0px solid #777;
+			border-radius: 1px;
+			font-family: inherit;
+			font-size: 19px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		button:hover {
+  background-color: #555;
+  color: white;
+  transition: all 0.3s ease;
+
+}
+	</style>
+</head>
+
+<div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+        <a href="file:///Users/ryan/littlelemon/index.html">
+      <img id="logoimg" border="0" alt="logo" src="file:///Users/ryan/Desktop/little%20lemon%20wesbite/Screenshot%202023-02-16%20at%201.42.58%20PM.png" width="180" height="70">
+        <ul class="links">
+          <li>
+          <a href="file:///Users/ryan/littlelemon/index.html" target = "_self">Home</a>
+          <li>
+              <a href="file:///Users/ryan/Desktop/website/sourcing.html" target ="_self">About</a>
+            <label for="show-features">About</label>
+          </li>
+
+          <li>
+      <a href="file:///Users/ryan/Desktop/website/solutions.html"target = "_self">Menu</a>
+            <input type="checkbox" id="show-menu">
+            <label for="show-services">Menu</label>
+
+          </li>
+<li><a href="file:///Users/ryan/littlelemon/bookingpage.html?role=11%3A00&comment=%09%09%09">Reservations</a></li>
+          <li>
+           <a href="file:///Users/ryan/Desktop/website/aboutus.html" class="desktop-link1">Order Online</a>
+           <ul>
+
+         </ul>
+
+
+          <li><a href="file:///Users/ryan/Desktop/website/contact.html">Contact Us</a></li>
+
+      </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="https://www.google.com/search?q=" class="search-box">
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+        <form class="searchBox" action="https://www.google.com/search" method="get">
+
+          <input type="text" class="search" name="q" value="" placeholder="Search Bar...">
+      </form>
+
+  
+        <Route path="/" element={<HomePage /Home></Route>
+        <Route path="/booking" element={<BookingPage /Menu></Route>
+
+    </nav>
+  </div>
+         </span>
+       </div>
+     </div>
+<body>
+	<h1>Booking Form</h1>
+
+	<!-- Create Form -->
+	<form id="form">
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Phone Number
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="age"
+				placeholder="Enter your phone number" />
+		</div>
+
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Number Of Guests
+			</label>
+	
+		<!-- Input Type Text -->
+		<input type="text"
+		id="age"
+		placeholder="Number Of Guests" />
+</div>
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Your Desired Timeslot
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+				<option>11:00</option>
+				<option>12:00</option>
+				<option>13:00</option>
+				<option>14:00</option>
+				<option>15:00</option>
+				<option>16:00</option>
+				<option>17:00</option>
+				<option>18:00</option>			
+      <option>19:00</option>
+      <option>20:00</option>
+      <option>21:00</option>
+      <option>22:00</option>
+			</select>
+		</div>
+
+		
+
+		<div class="form-control">
+			<label for="comment">
+				Any Special Requirements/Requests?
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Type your special requirements/requests?">
+			</textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+
+</body>
+
+</html>
